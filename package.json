@@ -1,0 +1,26 @@
+{
+  "name": "codex-project-wallet",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=23.0.0"
+  },
+  "bin": {
+    "codex-wallet": "scripts/codex-wallet"
+  },
+  "scripts": {
+    "test": "node --test --test-concurrency=1 test/*.test.mjs",
+    "start": "node src/cli.mjs status",
+    "smoke": "node scripts/live-smoke.mjs",
+    "benchmark:wallet": "node scripts/benchmark-wallet.mjs",
+    "install-skill": "node scripts/install-skill.mjs",
+    "web": "node src/cli.mjs web",
+    "test:web": "node scripts/test-dashboard-browser.cjs"
+  },
+  "dependencies": {
+    "ethers": "6.17.0",
+    "qrcode": "^1.5.4",
+    "undici": "8.12.3"
+  }
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Wallet Studio · 多账户控制台</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231b5542'/%3E%3Cpath d='M17 19h30v9H17zm0 16h13v12H17zm20 0h10v12H37z' fill='%23d8f1c4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#overview" aria-label="Wallet Studio 首页"><span class="brand-mark"><i></i><i></i><i></i></span><span>Wallet Studio<small>项目参与控制台</small></span></a>
+      <span class="nav-label">工作空间</span>
+      <nav id="navigation" aria-label="主导航"></nav>
+      <div class="sidebar-bottom"><div class="network-card"><span class="network-symbol">◇</span><div>BNB Smart Chain<small>主网 · Chain 56</small></div><span class="live-dot"></span></div><div class="service-state"><span class="live-dot" id="service-dot"></span><span id="service-text">正在连接本地服务</span><span id="version">v0.3</span></div></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><div class="breadcrumb"><span class="workspace-icon">W</span><span>我的工作空间</span><span class="slash">/</span><span id="breadcrumb-page">总览</span></div><div class="topbar-right"><span class="local-label"><span class="live-dot"></span>本地连接</span><span class="topbar-divider"></span><span class="avatar user-avatar">M</span></div></header>
+      <main id="main" tabindex="-1"><div class="initial-loading"><span class="spinner"></span>正在载入账户与项目记录…</div></main>
+      <footer><span>Wallet Studio <span class="footer-dot">·</span> 连接你的每一次链上参与</span><span id="last-sync">等待同步</span></footer>
+    </div>
+  </div>
+  <dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "walletTransport": "direct",
+  "proxy": "",
+  "rpcProxy": "",
+  "rpcUrls": [
+    "https://bsc-dataseed.bnbchain.org",
+    "https://bsc-rpc.publicnode.com"
+  ],
+  "confirmations": 3,
+  "quoteTtlMs": 120000,
+  "batchConcurrency": 2,
+  "webPort": 4173
+}

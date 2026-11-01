@@ -1,0 +1,3 @@
+#!/bin/sh
+task_dir=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+exec node --disable-warning=ExperimentalWarning "$task_dir/src/cli.mjs" "$@"

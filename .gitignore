@@ -1,0 +1,52 @@
+# Dependencies and generated output
+node_modules/
+coverage/
+dist/
+.DS_Store
+*.log
+*.tsbuildinfo
+
+# Wallet runtime and local account data
+.runtime/
+.baw/
+.codex/
+artifacts/
+test-results/
+playwright-report/
+blob-report/
+**/accounts.json
+**/session.json
+**/installation.json
+**/service.sock
+**/service.lock
+**/web.lock
+*.sqlite*
+*.db
+*.db-*
+*.sock
+*.key
+*.pem
+*.p12
+*.pfx
+*.keystore
+*.cookie*
+**/exports/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+/config.json
+/config.json.*
+credentials.json
+secrets.json
+*.local.json
+*.local.*
+
+# Private development notes and one-off live execution scripts
+/VALIDATION.md
+/VALIDATION-v0.3.md
+/VALIDATION-web.md
+/PERFORMANCE.md
+/MULTI-ACCOUNT.md
+/scripts/usdt-roundtrip-live.mjs

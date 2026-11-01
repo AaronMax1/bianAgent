@@ -1,0 +1,6 @@
+interface:
+  display_name: "Codex 项目钱包"
+  short_description: "说“这个项目打一下”，快速查价，在已授权金额内直接参与，简洁回报"
+  default_prompt: "用 $codex-project-wallet 快速参与这个项目，在我已授权的金额内直接执行，简洁回报结果。"
+policy:
+  allow_implicit_invocation: true
